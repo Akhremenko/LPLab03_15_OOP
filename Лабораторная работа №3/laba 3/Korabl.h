@@ -3,7 +3,12 @@
 
 class Korabl :public Transportnoe_sredstvo
 {
+	int kolPushek_;
 public:
-	Korabl(char*);
+	Korabl();
 	void printN();
+	int getKolPushek();
+	void setKolPushek(int);
+	void add();
+	void print();
 };

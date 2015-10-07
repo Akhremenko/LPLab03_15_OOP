@@ -8,6 +8,16 @@ Transportnoe_sredstvo::Transportnoe_sredstvo(char* nazvanie)
 	this->nazvanie = nazvanie;
 }
 
+void Transportnoe_sredstvo::show()
+{
+	Transportnoe_sredstvo* t = head;
+	while(t)
+	{
+		t->print();		// Вызыв функции вывода классов по списку
+		t = t->next;
+	}
+}
+
 Transportnoe_sredstvo::Transportnoe_sredstvo()
 {
 	this->nazvanie = "автпвлпжл";

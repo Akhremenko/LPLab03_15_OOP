@@ -9,6 +9,9 @@ public:
 	char* getNazvanie();
 	void setNazvanie(char*);
 	void printT();
+	virtual void print() = 0;
+	virtual void add() = 0;		// добавить элемент в список
+	static void show();		// вывести весь список
 	Transportnoe_sredstvo* next;
 protected:
 	static Transportnoe_sredstvo* head;

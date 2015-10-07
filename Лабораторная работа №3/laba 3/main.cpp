@@ -8,10 +8,12 @@
 
 using namespace std;
 
-void main()
+Transportnoe_sredstvo* Transportnoe_sredstvo::head = NULL;
+
+int main()
 {
 	setlocale(LC_CTYPE, "Russian");
-	Kapitan a(45, "Петр");
+	/*Kapitan a(45, "Петр");
 	Transportnoe_sredstvo b;
 	Korabl c("Виктория");
 	Parahod d("Аврора");
@@ -24,5 +26,15 @@ void main()
 	c.printN();
 	d.printPor();
 	e.printP();
-	f.printKon();
+	f.printKon();*/
+
+	Parusnik a;
+	Korabl c;
+	Parahod d;
+	Parusnik e;
+	Korvet f;
+
+	a.show();
+
+	return 0;
 }

@@ -3,7 +3,12 @@
 
 class Parahod :public Transportnoe_sredstvo
 {
+	int kolTrub_;
 public:
-	Parahod(char*);
+	Parahod();
 	void printPor();
+	void add();
+	void print();
+	int getKolTrub();
+	void setKolTrub(int);
 };
