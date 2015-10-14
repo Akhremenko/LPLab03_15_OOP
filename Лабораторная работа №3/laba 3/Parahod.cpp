@@ -5,8 +5,11 @@ using namespace std;
 
 Parahod::Parahod()
 {
-	kolTrub_ = rand() % 10;
-	add();
+}
+
+Parahod::Parahod(int kolvo)
+{
+	this->kolTrub_ = kolvo;
 }
 
 int Parahod::getKolTrub()
@@ -21,35 +24,11 @@ void Parahod::setKolTrub(int KolTrub)
 
 void Parahod::print()
 {
-	cout << "Параход " << getKolTrub() << endl;
+	cout << "Колличество труб парахода:  " << getKolTrub() << endl;
 }
 
 void Parahod::printPor()
 {
 	cout << "Название корабля: " << getNazvanie() << endl;
 	cout << endl;
-}
-void Parahod::add()
-{
-	if (!head)
-	{
-		head = this;
-		this->next = NULL;
-	}
-	else
-	{
-		Transportnoe_sredstvo* q = head;
-		if (q->next == NULL)
-		{
-			q->next = this;
-			this->next = NULL;
-		}
-		else
-		{
-			while (q->next != NULL)
-				q = q->next;
-			q->next = this;
-			this->next = NULL;
-		}
-	}
 }

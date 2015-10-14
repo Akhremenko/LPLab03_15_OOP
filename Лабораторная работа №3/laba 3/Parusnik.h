@@ -9,6 +9,6 @@ public:
 	void printP();
 	int getDlinaMachti();
 	void setDlinaMachti(int);
-	void add();
+	//void add();
 	void print();
 };

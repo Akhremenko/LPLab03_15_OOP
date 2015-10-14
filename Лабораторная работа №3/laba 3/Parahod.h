@@ -6,8 +6,8 @@ class Parahod :public Transportnoe_sredstvo
 	int kolTrub_;
 public:
 	Parahod();
+	Parahod(int);
 	void printPor();
-	void add();
 	void print();
 	int getKolTrub();
 	void setKolTrub(int);

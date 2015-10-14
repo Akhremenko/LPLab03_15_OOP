@@ -9,6 +9,5 @@ public:
 	void printN();
 	int getKolPushek();
 	void setKolPushek(int);
-	void add();
 	void print();
 };

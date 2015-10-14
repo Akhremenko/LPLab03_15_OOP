@@ -33,8 +33,14 @@ int main()
 	Parahod d;
 	Parusnik e;
 	Korvet f;
-
-	a.show();
-
+	a.add();
+	a.setDlinaMachti(5);
+	d.setKolTrub(9);
+	d.add();
+	c.setKolPushek(10);
+	c.add();
+	f.setSpeed(6);
+	f.add();
+	Transportnoe_sredstvo::show();
 	return 0;
 }

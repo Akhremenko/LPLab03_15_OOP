@@ -9,6 +9,5 @@ public:
 	void printKon();
 	int getSpeed();
 	void setSpeed(int);
-	void add();
 	void print();
 };
